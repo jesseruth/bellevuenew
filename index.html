@@ -26,12 +26,16 @@
   </ul>
   
   This is a sentence, with an <i>italic</i> word
-  
+  <div id="insert-here"></div>
   <ol>
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
   </ol>
-  
+  <script>
+    var listItems = ["Tim", "Jim", "Mary"];
+    document.getElementById("insert-here").innerHTML = "Hello JavaScript!";
+    listItems.map((i)=>console.log(i))
+  </script>
 </body>
 </html>
