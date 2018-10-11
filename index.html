@@ -34,8 +34,19 @@
   </ol>
   <script>
     var listItems = ["Tim", "Jim", "Mary"];
+    console.log(listItems.length);
+    
     document.getElementById("insert-here").innerHTML = "Hello JavaScript!";
-    listItems.map((i)=>console.log(i))
+
+    listItems.map((i)=>console.log(i));
+    
+    var newItem = document.createElement("LI");       // Create a <li> node
+    var textnode = document.createTextNode("Water");  // Create a text node
+    
+    newItem.appendChild(textnode);                    // Append the text to <li>
+    var list = document.getElementById("myList");    // Get the <ul> element to insert a new node
+    list.insertBefore(newItem, list.childNodes[0]);
+  
   </script>
 </body>
 </html>
